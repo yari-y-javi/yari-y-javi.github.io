@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yari & Javi — Nuestra Boda</title>
-    <meta property="og:title" content="Yari & Javi — Nos Casamos">
-    <meta property="og:description" content="27 de Marzo de 2026 • Confirma tu asistencia">
+    <title>Yari & Javi — Celebración</title>
+    <meta property="og:title" content="Yari & Javi — ¡Vamos a celebrar!">
+    <meta property="og:description" content="27 de Marzo de 2026 • Estás invitado a la fiesta">
     <meta property="og:image" content="https://yari-y-javi.github.io/preview-boda.jpeg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yari-y-javi.github.io/invitacion-boda.html">
+    <meta property="og:url" content="https://yari-y-javi.github.io/">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Sacramento&family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         * {
@@ -67,7 +67,7 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.45)), url('WhatsApp Image 2026-03-19 at 9.13.05 AM.jpeg') center top/cover no-repeat;
+            background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.45)), url('WhatsApp Image 2026-03-19 at 9.13.04 AM.jpeg') center center/cover no-repeat;
             position: relative;
             padding: 40px 20px;
         }
@@ -163,108 +163,6 @@
         .scroll-hint .arrow {
             font-size: 20px;
             color: var(--rosa-pastel);
-        }
-
-        /* ===== GALLERY CAROUSEL ===== */
-        .gallery-section {
-            padding: 70px 0;
-            background: var(--blanco-roto);
-            text-align: center;
-            overflow: hidden;
-        }
-
-        .gallery-wrapper {
-            position: relative;
-            max-width: 600px;
-            margin: 35px auto 0;
-            padding: 0 20px;
-            overflow: hidden;
-        }
-
-        .gallery-track {
-            display: flex;
-            transition: transform 0.4s ease;
-            cursor: grab;
-            user-select: none;
-        }
-
-        .gallery-track.grabbing {
-            cursor: grabbing;
-            transition: none;
-        }
-
-        .gallery-item {
-            min-width: 100%;
-            padding: 0 5px;
-        }
-
-        .gallery-item img {
-            width: 100%;
-            height: 420px;
-            object-fit: cover;
-            border-radius: 20px;
-            pointer-events: none;
-        }
-
-        .gallery-dots {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin-top: 25px;
-        }
-
-        .gallery-dot {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background: var(--verde-claro);
-            border: none;
-            cursor: pointer;
-            transition: background 0.3s, transform 0.3s;
-            padding: 0;
-        }
-
-        .gallery-dot.active {
-            background: var(--rosa-pastel);
-            transform: scale(1.3);
-        }
-
-        .gallery-nav {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: rgba(255,255,255,0.85);
-            border: 1px solid var(--verde-claro);
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            cursor: pointer;
-            font-size: 18px;
-            color: var(--texto);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: background 0.3s;
-            z-index: 2;
-        }
-
-        .gallery-nav:hover {
-            background: white;
-        }
-
-        .gallery-nav.prev { left: 5px; }
-        .gallery-nav.next { right: 5px; }
-
-        @media (max-width: 600px) {
-            .gallery-item img {
-                height: 350px;
-            }
-
-            .gallery-nav {
-                width: 34px;
-                height: 34px;
-                font-size: 15px;
-            }
         }
 
         @keyframes bounce {
@@ -669,14 +567,14 @@
     <!-- HERO -->
     <section class="hero">
         <div class="hero-content">
-            <p class="pre-title">Hey, nos casamos</p>
+            <p class="pre-title">¡Estás invitado!</p>
             <h1 class="couple-names">
                 Yari
                 <span class="ampersand">&</span>
                 Javi
             </h1>
             <p class="wedding-date-hero">27 de Marzo de 2026</p>
-            <p class="frase">"No sabemos bailar muy bien, pero juntos llevamos el mejor ritmo. Ven a celebrar con nosotros."</p>
+            <p class="frase">"Nos casamos y queremos celebrarlo contigo. Prepárate para una noche increíble."</p>
             <div class="scroll-hint">
                 <span>Descubre más</span>
                 <div class="arrow">&#8595;</div>
@@ -684,44 +582,10 @@
         </div>
     </section>
 
-    <!-- GALLERY -->
-    <section class="gallery-section">
-        <p class="section-subtitle fade-in">Nuestra historia</p>
-        <h2 class="section-title fade-in">el inicio de todo</h2>
-        <div class="gallery-wrapper fade-in">
-            <button class="gallery-nav prev" onclick="moveGallery(-1)">&#8249;</button>
-            <div class="gallery-track" id="galleryTrack">
-                <div class="gallery-item">
-                    <img src="WhatsApp Image 2026-03-19 at 9.13.06 AM.jpeg" alt="La propuesta close-up">
-                </div>
-                <div class="gallery-item">
-                    <img src="WhatsApp Image 2026-03-19 at 9.13.05 AM (1).jpeg" alt="Beso con letrero neón">
-                </div>
-                <div class="gallery-item">
-                    <img src="WhatsApp Image 2026-03-19 at 9.13.04 AM.jpeg" alt="Caja de anillos J&Y">
-                </div>
-                <div class="gallery-item">
-                    <img src="WhatsApp Image 2026-03-19 at 9.13.05 AM 1.jpeg" alt="Beso romántico entre columnas">
-                </div>
-                <div class="gallery-item">
-                    <img src="WhatsApp Image 2026-03-19 at 9.13.05 AM 2.jpeg" alt="Abrazo junto a pared rústica">
-                </div>
-            </div>
-            <button class="gallery-nav next" onclick="moveGallery(1)">&#8250;</button>
-            <div class="gallery-dots" id="galleryDots">
-                <button class="gallery-dot active" onclick="goToSlide(0)"></button>
-                <button class="gallery-dot" onclick="goToSlide(1)"></button>
-                <button class="gallery-dot" onclick="goToSlide(2)"></button>
-                <button class="gallery-dot" onclick="goToSlide(3)"></button>
-                <button class="gallery-dot" onclick="goToSlide(4)"></button>
-            </div>
-        </div>
-    </section>
-
     <!-- COUNTDOWN -->
     <section class="countdown-section fade-in">
         <p class="section-subtitle">Faltan</p>
-        <h2 class="section-title">para la fiesta</h2>
+        <h2 class="section-title">para la celebración</h2>
         <div class="countdown" id="countdown">
             <div class="countdown-item">
                 <div class="countdown-number" id="days">--</div>
@@ -745,7 +609,7 @@
     <!-- DETAILS -->
     <section class="details-section">
         <p class="section-subtitle fade-in">Apunta esto</p>
-        <h2 class="section-title fade-in">dónde y cuándo</h2>
+        <h2 class="section-title fade-in">la fiesta es aquí</h2>
         <div class="details-grid">
             <div class="detail-card fade-in">
                 <div class="detail-icon">&#128197;</div>
@@ -784,13 +648,13 @@
         <p class="section-subtitle">Outfit</p>
         <h2 class="section-title">cómo ir vestido</h2>
         <div class="dresscode-badge">Casual</div>
-        <p class="dresscode-note">Ven cómodo y listo para pasarla bien.</p>
+        <p class="dresscode-note">Ven cómodo, lo importante es pasarla bien.</p>
     </section>
 
     <!-- RSVP -->
     <section class="rsvp-section" id="rsvp">
         <p class="section-subtitle fade-in">Dinos si vienes</p>
-        <h2 class="section-title fade-in">¿te apuntas?</h2>
+        <h2 class="section-title fade-in">¿vas a estar ahí?</h2>
         <div class="rsvp-form fade-in" id="rsvpForm">
             <div class="form-group">
                 <label>Nombre completo</label>
@@ -814,7 +678,7 @@
                 </select>
             </div>
             <div class="form-group">
-                <label>Mensaje para los novios (opcional)</label>
+                <label>Mensaje para Yari y Javi (opcional)</label>
                 <textarea id="rsvpMessage" placeholder="Escribe algo bonito..."></textarea>
             </div>
             <button class="rsvp-btn" onclick="submitRSVP()">Confirmar asistencia</button>
@@ -831,7 +695,7 @@
     <footer class="footer">
         <div class="footer-names">Yari & Javi</div>
         <p>27 &middot; 03 &middot; 2026</p>
-        <p style="margin-top: 15px;">Hecho con <span class="heart">&#10084;</span> y muchas ganas</p>
+        <p style="margin-top: 15px;">Hecho con <span class="heart">&#10084;</span> y muchas ganas de fiesta</p>
     </footer>
 
     <script>
@@ -874,91 +738,6 @@
 
         document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-        // === GALLERY CAROUSEL ===
-        let currentSlide = 0;
-        const track = document.getElementById('galleryTrack');
-        const dots = document.querySelectorAll('.gallery-dot');
-        const totalSlides = dots.length;
-
-        function moveGallery(dir) {
-            currentSlide = (currentSlide + dir + totalSlides) % totalSlides;
-            updateGallery();
-        }
-
-        function goToSlide(index) {
-            currentSlide = index;
-            updateGallery();
-        }
-
-        function updateGallery() {
-            track.style.transform = `translateX(-${currentSlide * 100}%)`;
-            dots.forEach((d, i) => d.classList.toggle('active', i === currentSlide));
-        }
-
-        // Autoplay cada 4 segundos
-        let autoplayInterval = setInterval(() => moveGallery(1), 4000);
-
-        function resetAutoplay() {
-            clearInterval(autoplayInterval);
-            autoplayInterval = setInterval(() => moveGallery(1), 4000);
-        }
-
-        // Reiniciar autoplay cuando el usuario interactúa
-        document.querySelector('.gallery-wrapper').addEventListener('click', resetAutoplay);
-        document.querySelector('.gallery-wrapper').addEventListener('touchstart', resetAutoplay);
-
-        // Swipe support
-        let startX = 0;
-        let isDragging = false;
-        let dragOffset = 0;
-
-        track.addEventListener('touchstart', (e) => {
-            startX = e.touches[0].clientX;
-            isDragging = true;
-            track.classList.add('grabbing');
-        });
-
-        track.addEventListener('touchmove', (e) => {
-            if (!isDragging) return;
-            dragOffset = e.touches[0].clientX - startX;
-        });
-
-        track.addEventListener('touchend', () => {
-            if (Math.abs(dragOffset) > 50) {
-                moveGallery(dragOffset > 0 ? -1 : 1);
-            }
-            isDragging = false;
-            dragOffset = 0;
-            track.classList.remove('grabbing');
-        });
-
-        // Mouse drag support
-        track.addEventListener('mousedown', (e) => {
-            startX = e.clientX;
-            isDragging = true;
-            track.classList.add('grabbing');
-        });
-
-        track.addEventListener('mousemove', (e) => {
-            if (!isDragging) return;
-            dragOffset = e.clientX - startX;
-        });
-
-        track.addEventListener('mouseup', () => {
-            if (Math.abs(dragOffset) > 50) {
-                moveGallery(dragOffset > 0 ? -1 : 1);
-            }
-            isDragging = false;
-            dragOffset = 0;
-            track.classList.remove('grabbing');
-        });
-
-        track.addEventListener('mouseleave', () => {
-            isDragging = false;
-            dragOffset = 0;
-            track.classList.remove('grabbing');
-        });
-
         // === RSVP ===
         const waNumbers = [
             { number: '527352467994', label: 'Yari' },
@@ -979,7 +758,7 @@
 
             const attendText = attend === 'si' ? 'Sí asistiré' : 'No podré asistir';
             const guestsText = guests === '0' ? 'Solo yo' : '+' + guests + ' acompañante(s)';
-            let waMessage = `*Confirmación Boda Yari & Javi*\n\nNombre: ${name}\nAsistencia: ${attendText}\nAcompañantes: ${guestsText}`;
+            let waMessage = `*Confirmación Fiesta Yari & Javi*\n\nNombre: ${name}\nAsistencia: ${attendText}\nAcompañantes: ${guestsText}`;
             if (message) waMessage += `\nMensaje: ${message}`;
 
             const encoded = encodeURIComponent(waMessage);
